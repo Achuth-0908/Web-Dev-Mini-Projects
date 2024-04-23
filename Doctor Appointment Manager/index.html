@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Doctor Appointment Manager</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Doctor Appointment Manager</h1>
+  </header>
+  <main>
+    <section id="patient-registration">
+      <h2>Patient Registration</h2>
+      <form id="registration-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <button type="submit">Register</button>
+      </form>
+    </section>
+    <section id="doctor-availability">
+      <h2>Available Appointment Slots</h2>
+      <div id="doctor-slots"></div>
+    </section>
+    <section id="appointment-booking">
+      <h2>Book an Appointment</h2>
+      <div id="booking-container"></div>
+    </section>
+    <section id="appointment-summary">
+      <h2>Appointment Summary</h2>
+      <div id="summary-container"></div>
+    </section>
+  </main>
+ <script src="script.js"></script>
+</body>
+</html>
