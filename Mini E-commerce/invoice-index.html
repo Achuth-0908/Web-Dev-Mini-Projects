@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Electronic Store Invoice</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+		fieldset {
+			margin-bottom: 20px;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+		legend {
+			font-weight: bold;
+		}
+		label {
+			display: block;
+			margin-bottom: 5px;
+			position: relative;
+		}
+		input[type="text"] {
+			padding: 5px;
+			width: 200px;
+		}
+		button {
+			padding: 5px 10px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			cursor: pointer;
+		}
+		#invoice {
+			display: none;
+			border: 1px solid #ccc;
+			padding: 10px;
+			background-color: #f2f2f2;
+		}
+		.tooltip {
+	visibility: hidden;
+	width: 200px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -100px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+label:hover .tooltip {
+	visibility: visible;
+	opacity: 1;
+
+		}
+	</style>
+</head>
+<body>
+	<h2 style="text-align:center">Welcome to Online Shopping </h2>
+	<fieldset>
+		<legend>Customer Information</legend>
+		<label for="name">Name:</label>
+		<input type="text" id="name" placeholder="Enter your name">
+	</fieldset>
+
+	<fieldset>
+		<legend>Products</legend>
+		<label>
+			<input type="checkbox" id="product1" value="499.99">
+			Samsung 4K LED TV ($499.99)
+			<span class="tooltip">Samsung 4K LED TV</span>
+		</label>
+		<label>
+			<input type="checkbox" id="product2" value="799.99">
+			Lenovo LOQ i5 12th gen RTX 4060 16GB RAM 1TB SSD ($799.99)
+			<span class="tooltip">Lenovo LOQ i5 12th gen RTX 4060</span>
+		</label>
+		<label>
+			<input type="checkbox" id="product3" value="149.99">
+			Nothing Ear(2) Headphones ($149.99)
+			<span class="tooltip">Nothing Ear(2) Headphones</span>
+		</label>
+		<label>
+			<input type="checkbox" id="product4" value="59.99">
+			bOAT Portable Bluetooth Speaker ($59.99)
+			<span class="tooltip">bOAT Portable Bluetooth Speaker</span>
+		</label>
+		<label>
+			<input type="checkbox" id="product5" value="299.99">
+			Canon Digital Camera ($299.99)
+			<span class="tooltip">Canon Digital Camera</span>
+		</label>
+		<label>
+			<input type="checkbox" id="product6" value="99.99">
+			Apple Gen 8 Smartwatch ($99.99)
+			<span class="tooltip">Gen 8 Smartwatch</span>
+		</label>
+		<label>
+			<input type="checkbox" id="product9" value="79.99">
+			Zeb Tranformer Wireless Mouse and Keyboard Combo ($79.99)
+			<span class="tooltip">Zebronics Transformer Wireless Mouse and Keyboard Combo</span>
+		</label>
+		<label>
+			<input type="checkbox" id="product10" value="199.99">
+			Seagate External SSD with 1TB Storage ($199.99)
+			<span class="tooltip"><!DOCTYPE html>
+<html>
+<head>
+	<title>Electronic Store Invoice</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+		fieldset {
+			margin-bottom: 20px;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+		legend {
+			font-weight: bold;
+		}
+		label {
+			display: block;
+			margin-bottom: 5px;
+			position: relative;
+		}
+		input[type="text"] {
+			padding: 5px;
+			width: 200px;
+		}
+		button {
+			padding: 5px 10px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			cursor: pointer;
+		}
+		#invoice {
+			display: none;
+			border: 1px solid #ccc;
+			padding: 10px;
+			background-color: #f2f2f2;
+		}
+		.tooltip {
+	visibility: hidden;
+	width: 200px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -100px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+label:hover .tooltip {
+	visibility: visible;
+	opacity: 1;
+
+		}
+	</style>
+</head>
+<body>
+	<h2 style="text-align:center">Welcome to Online Shopping </h2>
+	<fieldset>
+		<legend>Customer Information</legend>
+		<label for="name">Name:</label>
+		<input type="text" id="name" placeholder="Enter your name">
+	</fieldset>
+
+	<fieldset>
+		<legend>Products</legend>
+		<label>
+			<input type="checkbox" id="product1" value="499.99">
+			Samsung 4K LED TV ($499.99)
+			<span class="tooltip">Samsung 4K LED TV</span>
+		</label>
+		<label>
+			<input type="checkbox" id="product2" value="799.99">
+			Lenovo LOQ i5 12th gen RTX 4060 16GB RAM 1TB SSD ($799.99)
+			<span class="tooltip">Lenovo LOQ i5 12th gen RTX 4060</span>
+		</label>
+		<label>
+			<input type="checkbox" id="product3" value="149.99">
+			Nothing Ear(2) Headphones ($149.99)
+			<span class="tooltip">Nothing Ear(2) Headphones</span>
+		</label>
+		<label>
+			<input type="checkbox" id="product4" value="59.99">
+			bOAT Portable Bluetooth Speaker ($59.99)
+			<span class="tooltip">bOAT Portable Bluetooth Speaker</span>
+		</label>
+		<label>
+			<input type="checkbox" id="product5" value="299.99">
+			Canon Digital Camera ($299.99)
+			<span class="tooltip">Canon Digital Camera</span>
+		</label>
+		<label>
+			<input type="checkbox" id="product6" value="99.99">
+			Apple Gen 8 Smartwatch ($99.99)
+			<span class="tooltip">Gen 8 Smartwatch</span>
+		</label>
+		<label>
+			<input type="checkbox" id="product9" value="79.99">
+			Zeb Tranformer Wireless Mouse and Keyboard Combo ($79.99)
+			<span class="tooltip">Zebronics Transformer Wireless Mouse and Keyboard Combo</span>
+		</label>
+		<label>
+			<input type="checkbox" id="product10" value="199.99">
+			Seagate External SSD with 1TB Storage ($199.99)
+			<span class="tooltip">Seagate External SSD with 1TB Storage</span>
+		</label>
+	</fieldset>
+
+	<button id="submitBtn">Submit</button>
+
+	<div id="invoice">
+		<h2>Invoice</h2>
+		<p id="date"></p>
+		<table>
+			<thead>
+				<tr>
+					<th>Product</th>
+					<th>Quantity</th>
+					<th>Price</th>
+					<th>Total</th>
+				</tr>
+			</thead>
+			<tbody id="invoiceBody"></tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3">Subtotal:</td>
+					<td id="subtotal"></td>
+				</tr>
+				<tr>
+					<td colspan="3">Discount:</td>
+					<td id="discount"></td>
+				</tr>
+				<tr>
+					<td colspan="3">Total:</td>
+					<td id="total"></td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+
+	<script>
+		const products = [
+			{ id: 'product1', name: '32-inch LED TV', price: 499.99 },
+			{ id: 'product2', name: 'Laptop with 8GB RAM and 256GB SSD', price: 799.99 },
+			{ id: 'product3', name: 'Wireless Headphones', price: 149.99 },
+			{ id: 'product4', name: 'Portable Bluetooth Speaker', price: 59.99 },
+			{ id: 'product5', name: 'Digital Camera', price: 299.99 },
+			{ id: 'product6', name: 'Smartwatch', price: 99.99 },
+			{ id: 'product7', name: 'Tablet with 10-inch Display', price: 249.99 },
+			{ id: 'product8', name: 'Home Theater System', price: 399.99 },
+			{ id: 'product9', name: 'Wireless Mouse and Keyboard Combo', price: 79.99 },
+			{ id: 'product10', name: 'External SSD with 1TB Storage', price: 199.99 }
+		];
+
+		const submitBtn = document.getElementById('submitBtn');
+		const invoiceBody = document.getElementById('invoiceBody');
+		const subtotalElem = document.getElementById('subtotal');
+		const discountElem = document.getElementById('discount');
+		const totalElem = document.getElementById('total');
+		const dateElem = document.getElementById('date');
+
+		submitBtn.addEventListener('click', generateInvoice);
+
+		function generateInvoice() {
+			const selectedProducts = products.filter(product => document.getElementById(product.id).checked);
+			const quantities = {};
+
+			selectedProducts.forEach(product => {
+				const quantity = prompt(`Enter quantity for ${product.name}:`);
+				quantities[product.id] = parseInt(quantity) || 0;
+			});
+
+			const subtotal = calculateSubtotal(selectedProducts, quantities);
+			const discount = calculateDiscount(selectedProducts.length, subtotal);
+			const total = subtotal - discount;
+
+			invoiceBody.innerHTML = '';
+			selectedProducts.forEach(product => {
+				const quantity = quantities[product.id];
+				const productTotal = product.price * quantity;
+				invoiceBody.innerHTML += `
+					<tr>
+						<td>${product.name}</td>
+						<td>${quantity}</td>
+						<td>$${product.price.toFixed(2)}</td>
+						<td>$${productTotal.toFixed(2)}</td>
+					</tr>
+				`;
+			});
+
+			subtotalElem.textContent = `$${subtotal.toFixed(2)}`;
+			discountElem.textContent = `$${discount.toFixed(2)}`;
+			totalElem.textContent = `$${total.toFixed(2)}`;
+			dateElem.textContent = `Date: ${new Date().toLocaleString()}`;
+
+			document.getElementById('invoice').style.display = 'block';
+		}
+
+		function calculateSubtotal(products, quantities) {
+			let subtotal = 0;
+			products.forEach(product => {
+				const quantity = quantities[product.id];
+				subtotal += product.price * quantity;
+			});
+			return subtotal;
+		}
+
+		function calculateDiscount(productCount, subtotal) {
+			let discount = 0;
+			if (productCount >= 7) {
+				discount = subtotal * 0.1;
+			} else if (productCount >= 3) {
+				discount = subtotal * 0.05;
+			} else if (productCount === products.length) {
+				discount = subtotal * 0.15;
+			}
+			return discount;
+		}
+	</script>
+</body>
+</html>External SSD with 1TB Storage</span>
+		</label>
+	</fieldset>
+
+	<button id="submitBtn">Submit</button>
+
+	<div id="invoice">
+		<h2>Invoice</h2>
+		<p id="date"></p>
+		<table>
+			<thead>
+				<tr>
+					<th>Product</th>
+					<th>Quantity</th>
+					<th>Price</th>
+					<th>Total</th>
+				</tr>
+			</thead>
+			<tbody id="invoiceBody"></tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3">Subtotal:</td>
+					<td id="subtotal"></td>
+				</tr>
+				<tr>
+					<td colspan="3">Discount:</td>
+					<td id="discount"></td>
+				</tr>
+				<tr>
+					<td colspan="3">Total:</td>
+					<td id="total"></td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+
+	<script>
+		const products = [
+			{ id: 'product1', name: '32-inch LED TV', price: 499.99 },
+			{ id: 'product2', name: 'Laptop with 8GB RAM and 256GB SSD', price: 799.99 },
+			{ id: 'product3', name: 'Wireless Headphones', price: 149.99 },
+			{ id: 'product4', name: 'Portable Bluetooth Speaker', price: 59.99 },
+			{ id: 'product5', name: 'Digital Camera', price: 299.99 },
+			{ id: 'product6', name: 'Smartwatch', price: 99.99 },
+			{ id: 'product7', name: 'Tablet with 10-inch Display', price: 249.99 },
+			{ id: 'product8', name: 'Home Theater System', price: 399.99 },
+			{ id: 'product9', name: 'Wireless Mouse and Keyboard Combo', price: 79.99 },
+			{ id: 'product10', name: 'External SSD with 1TB Storage', price: 199.99 }
+		];
+
+		const submitBtn = document.getElementById('submitBtn');
+		const invoiceBody = document.getElementById('invoiceBody');
+		const subtotalElem = document.getElementById('subtotal');
+		const discountElem = document.getElementById('discount');
+		const totalElem = document.getElementById('total');
+		const dateElem = document.getElementById('date');
+
+		submitBtn.addEventListener('click', generateInvoice);
+
+		function generateInvoice() {
+			const selectedProducts = products.filter(product => document.getElementById(product.id).checked);
+			const quantities = {};
+
+			selectedProducts.forEach(product => {
+				const quantity = prompt(`Enter quantity for ${product.name}:`);
+				quantities[product.id] = parseInt(quantity) || 0;
+			});
+
+			const subtotal = calculateSubtotal(selectedProducts, quantities);
+			const discount = calculateDiscount(selectedProducts.length, subtotal);
+			const total = subtotal - discount;
+
+			invoiceBody.innerHTML = '';
+			selectedProducts.forEach(product => {
+				const quantity = quantities[product.id];
+				const productTotal = product.price * quantity;
+				invoiceBody.innerHTML += `
+					<tr>
+						<td>${product.name}</td>
+						<td>${quantity}</td>
+						<td>$${product.price.toFixed(2)}</td>
+						<td>$${productTotal.toFixed(2)}</td>
+					</tr>
+				`;
+			});
+
+			subtotalElem.textContent = `$${subtotal.toFixed(2)}`;
+			discountElem.textContent = `$${discount.toFixed(2)}`;
+			totalElem.textContent = `$${total.toFixed(2)}`;
+			dateElem.textContent = `Date: ${new Date().toLocaleString()}`;
+
+			document.getElementById('invoice').style.display = 'block';
+		}
+
+		function calculateSubtotal(products, quantities) {
+			let subtotal = 0;
+			products.forEach(product => {
+				const quantity = quantities[product.id];
+				subtotal += product.price * quantity;
+			});
+			return subtotal;
+		}
+
+		function calculateDiscount(productCount, subtotal) {
+			let discount = 0;
+			if (productCount >= 7) {
+				discount = subtotal * 0.1;
+			} else if (productCount >= 3) {
+				discount = subtotal * 0.05;
+			} else if (productCount === products.length) {
+				discount = subtotal * 0.15;
+			}
+			return discount;
+		}
+	</script>
+</body>
+</html>
